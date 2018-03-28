@@ -7,15 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/default.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./css/default.css">
+    <link rel="shortcut icon" href="">
+    
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color:#c3f2fd;">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#7db4e6;">
 	<div>
-	  <a class="navbar-brand" href="/">
+	  <a class="navbar-brand" href="#">
 	    <h1 class="h6">金成哲テコンドー道場</h1>
 	  </a>
 	  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="ナビゲーションの切替">
@@ -23,26 +24,26 @@
 	  </button>
 	</div>
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	  <div class="navbar-nav mr-auto">
+	  <ul class="navbar-nav mr-auto">
 	    <li class="nav-item active">
-	      <a class="nav-link" href="#home">Home<span class="sr-only">(現位置)</span></a>
+	      <a class="nav-link" href="#home">Home</a>
 	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" data-toggle="collapse" href="#principle">道場理念</a>
+	    <li class="nav-item active">
+	      <a class="nav-link" href="#principle">道場理念</a>
 	    </li>
-	    <li class="nav-item">
+	    <li class="nav-item active">
 	      <a class="nav-link" href="#fee">月謝・諸経費</a>
 	    </li>
-	    <li class="nav-item">
+	    <li class="nav-item active">
 	      <a class="nav-link" href="#instructors">指導員</a>
 	    </li>
-	    <li class="nav-item">
+	    <li class="nav-item active">
 	      <a class="nav-link" href="#schedule">スケジュール</a>
 	    </li>
-	    <li class="nav-item">
+	    <li class="nav-item active">
 	      <a class="nav-link" href="#access">アクセス</a>
 	    </li>
-	  </div>
+	  </ul>
 	</div>
       </nav>
     </header>
@@ -50,70 +51,89 @@
     <main>
       <!-- -->
       <article id="home">
-	<div>
-	  <img src="./img/moai.jpg">
+	<div class="container">
+	  <div class="row">
+	    <div>
+	      <img src="./img/moai.jpg">
+	    </div>
+	    
+	    <section id="abstract" class="col-xs-6 col-sm-4 col-md-3">
+	      <h2 class="section-title">道場について</h2>
+	      <ul>
+		<li>日本国際テコンドー協会公認</li>
+		<li>埼玉県川口市、蕨市のテコンドークラブです</li>
+		<li>未経験者歓迎。初心者から丁寧に指導します！</li>
+		</ul>
+	    </section>
+	    
+	    <section id="notice" class="col-xs-6 col-sm-4 col-md-3">
+	      <h2 class="section-title">お知らせ</h2>
+	      <ul>
+		<li>蕨道場の稽古場所変更について
+		  2018年1月より、蕨クラブの稽古場所が蕨市民会館になります。
+		  蕨市民会館 3F 多目的ホール
+		</li>
+	      </ul>
+	    </section>
+	    
+	    <section id="campaign" class="col-xs-6 col-sm-4 col-md-3">
+	      <h2 class="section-title">キャンペーン</h2>
+	      <p>春の入会キャンペーン！今なら入会特典として</p>
+	      <ul>
+	      <li>初回月会費３ヶ月分無料！</li>
+	      <li>テコンドー初心者教本プレゼント！</li>
+	      <li>キックミットプレゼント！</li>
+	      </ul>
+	    </section>
+	    
+	    <section id="recent_events" class="col-xs-6 col-sm-4 col-md-3">
+	      <h2 class="section-title">直近の予定</h2>
+	      <div id="sched_view">Loading ...</div>
+	    </section>
+	    
+	    <section id="blog" class="col-xs-6 col-sm-4 col-md-3">
+	      <h2 class="section-title">道場ブログ</h2>
+	      <p>道場公式ブログ！</p>
+	      <p>アメブロへのリンクです</p>
+	      <a target="_blank" href="http://ameblo.jp/tkdksc/">金成哲テコンドー道場のブログ</a>
+	    </section>
+
+	    <section id="free_lesson" class="col-xs-6 col-sm-4 col-md-3">
+	      <h2 class="section-title">体験練習</h2>
+	    </section>
+
+	    <section id="movie" class="col-xs-6 col-sm-4 col-md-3">
+	      <h2 class="section-title">動画</h2>
+	      <div>
+		<p>少年部練習風景</p>
+		<iframe width="420" height="315" src="http://www.youtube.com/embed/OjT0HSRJ1s0" frameborder="0" allowfullscreen></iframe>
+	      </div>
+	      <div>
+		<p>成年部練習風景</p>
+		<iframe width="420" height="315" src="http://www.youtube.com/embed/HfCz_BymfG8" frameborder="0" allowfullscreen></iframe>
+	      </div>
+	    </section>
+	  </div>
 	</div>
-
-	<section id="abstract">
-	  <ul class="list-unstyled">
-	    <li>日本国際テコンドー協会公認</li>
-	    <li>埼玉県川口市、蕨市のテコンドークラブです</li>
-	    <li>未経験者歓迎。初心者から丁寧に指導します！</li>
-	  </ul>
-	</section>
-
-	<section id="notice">
-	  <h2>お知らせ</h2>
-	  <ul>
-	    <li>蕨道場の稽古場所変更について
-	      2018年1月より、蕨クラブの稽古場所が蕨市民会館になります。
-	      蕨市民会館 3F 多目的ホール
-	    </li>
-	  </ul>
-	</section>
-
-	<section id="campaign">
-	  <h2>キャンペーン</h2>
-	  <p>春の入会キャンペーン！今なら入会特典として</p>
-	  <ul>
-	    <li>初回月会費３ヶ月分無料！</li>
-	    <li>テコンドー初心者教本プレゼント！</li>
-	    <li>キックミットプレゼント！</li>
-	  </ul>
-	</section>
-
-	<section id="recent_events">
-	  <h2>直近の予定</h2>
-	  <div id="sched_view">Loading ...</div>
-	</section>
-
-	<section>
-	  <h2>道場ブログ</h2>
-	  <p>道場公式ブログ！</p>
-	  <p>アメブロへのリンクです</p>
-	  <a target="_blank" href="http://ameblo.jp/tkdksc/">金成哲テコンドー道場のブログ</a>
-	</section>
-
-	<section id="movie">
-	  <h2>動画</h2>
-	</section>
-
-	<section id="free_lesson">
-	  <h2>体験練習</h2>
-	</section>
       </article>
 
       <!-- -->
       <article id="principle">
-	<h1>道場理念</h1>
+	<h1 class="article-title">道場理念</h1>
 	<section>
+	  <h2 class="section-title">金道場が目指すもの</h2>
+	  <p class="main-text" style="margin:1em 1em;">
+	    <strong>
+	      テコンドーを通して「自分力」を磨く！
+	    </strong>
+	  </p>
 	  <p>
 	    礼節を重んじて、他人に対し敬意をはらえる明るい人作りを理念とします。
 	    この世の中で生き抜く力、溶け込む力、役に立つ力、まさに「自分力」を与えられる道場を目指し、稽古生が自立的成長を実感できる魅力的な自己実現の場を提供します。
 	  </p>
 	</section>
 	<section>
-	  <h2>金道場三大訓</h2>
+	  <h2 class="section-title">金道場三大訓</h2>
 	  <ul style="list-style:none; padding-left:10px;">
 	    <li>一、真剣の心</li>
 	    <li>一、継続の心</li>
@@ -124,15 +144,9 @@
 	    やがてそれは感謝の心となる。
 	  </p>
 	</section>
-	<section>
-	  <h2>金道場が目指すもの</h2>
-	  <p>
-	    当道場が目指すものは、テコンドーを通して「自分力」を磨く！
-	  </p>
-	</section>
 
 	<section>
-	  <h2>「自分力」とは</h2>
+	  <h2 class="section-title">「自分力」とは</h2>
 	  <p>
 	    自分の経験したことのない問題や課題を自分自身で解決していく力であり、
 	    「人間性に裏打ちされた能力の錬磨と発揮」です。能力があっても人間性に裏打ち
@@ -145,7 +159,7 @@
 	</section>
 
 	<section>
-	  <h2>人生最終的には、自分自身！</h2>
+	  <h2 class="section-title">人生最終的には、自分自身！</h2>
 	  <p>
 	    世の中が豊かになり目まぐるしい発展を遂げた現代では、
 	    比べるかのように人々の「心」は、貧しくなる傾向が見受けられます。
@@ -157,7 +171,7 @@
 	</section>
 	
 	<section>
-	  <h2>これからの時代を生き抜く力</h2>
+	  <h2 class="section-title">これからの時代を生き抜く力</h2>
 	  <p>
 	    これからの時代は、人は学歴だけで判断されるのではなく、自分力のレベルで評価
 	    されるようになると思います。
@@ -170,22 +184,22 @@
       
       <!-- -->
       <article id="fee">
-	<h1>月謝・諸経費</h1>
+	<h1 class="article-title">月謝・諸経費</h1>
       </article>
       <!-- -->
       <article id="instructors">
-	<h1>指導員紹介</h1>
+	<h1 class="article-title">指導員紹介</h1>
 	<p>スマホ版現在作成中！</p>
 	<p>ひとまず、<a target="_blank" href="http://tkd-ksc.com/?mode=pc#instructor" >PC版</a>をご覧ください。</p>
       </article>
       <!-- -->
       <article id="schedule">
-	<h1>スケジュール</h1>
+	<h1 class="article-title">スケジュール</h1>
 	
       </article>
       <!-- -->
       <article id="access">
-	<h1>アクセス</h1>
+	<h1 class="article-title">アクセス</h1>
 	<p>リンクをクリックすると、Google Map が起動します。</p>
 	<ul>
 	  <li>
