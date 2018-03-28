@@ -16,12 +16,12 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#7db4e6;">
 	<div>
-	  <a class="navbar-brand" href="#">
-	    <h1 class="h6">金成哲テコンドー道場</h1>
-	  </a>
 	  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="ナビゲーションの切替">
 	    <span class="navbar-toggler-icon" style="padding: 10px !important;"></span>
 	  </button>
+	  <a class="navbar-brand" href="#">
+	    <h1 class="h5">金成哲テコンドー道場</h1>
+	  </a>
 	</div>
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	  <ul class="navbar-nav mr-auto">
@@ -48,22 +48,24 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <!-- -->
       <article id="home">
+	<h1 class="article-title">道場について</h1>
 	<div class="container">
 	  <div class="row">
 	    <div>
-	      <img src="./img/moai.jpg">
+	      <img src="./img/moai.jpg" style="margin:1em;">
 	    </div>
 	    
-	    <section id="abstract" class="col-xs-6 col-sm-4 col-md-3">
-	      <h2 class="section-title">道場について</h2>
+	    <section id="campaign" class="col-xs-6 col-sm-4 col-md-3">
+	      <h2 class="section-title">春のキャンペーン!</h2>
+	      <p style="margin-top:1em;">今なら入会特典として</p>
 	      <ul>
-		<li>日本国際テコンドー協会公認</li>
-		<li>埼玉県川口市、蕨市のテコンドークラブです</li>
-		<li>未経験者歓迎。初心者から丁寧に指導します！</li>
-		</ul>
+	      <li>初回月会費３ヶ月分無料！</li>
+	      <li>テコンドー初心者教本プレゼント！</li>
+	      <li>キックミットプレゼント！</li>
+	      </ul>
 	    </section>
 	    
 	    <section id="notice" class="col-xs-6 col-sm-4 col-md-3">
@@ -75,33 +77,37 @@
 		</li>
 	      </ul>
 	    </section>
-	    
-	    <section id="campaign" class="col-xs-6 col-sm-4 col-md-3">
-	      <h2 class="section-title">キャンペーン</h2>
-	      <p>春の入会キャンペーン！今なら入会特典として</p>
-	      <ul>
-	      <li>初回月会費３ヶ月分無料！</li>
-	      <li>テコンドー初心者教本プレゼント！</li>
-	      <li>キックミットプレゼント！</li>
-	      </ul>
-	    </section>
-	    
+
 	    <section id="recent_events" class="col-xs-6 col-sm-4 col-md-3">
 	      <h2 class="section-title">直近の予定</h2>
 	      <div id="sched_view">Loading ...</div>
 	    </section>
 	    
-	    <section id="blog" class="col-xs-6 col-sm-4 col-md-3">
+	    <section id="blog" class="col-xs-6 col-sm-4 col-md-3" style="margin-bottom:0.2em;">
 	      <h2 class="section-title">道場ブログ</h2>
 	      <p>道場公式ブログ！</p>
-	      <p>アメブロへのリンクです</p>
-	      <a target="_blank" href="http://ameblo.jp/tkdksc/">金成哲テコンドー道場のブログ</a>
+	      <a target="_blank" href="http://ameblo.jp/tkdksc/" class="btn btn-primary">金成哲テコンドー道場のブログ</a>
+	    </section>
+
+	    <section id="abstract" class="col-xs-6 col-sm-4 col-md-3">
+	      <h2 class="section-title">道場について</h2>
+	      <ul>
+		<li>日本国際テコンドー協会公認</li>
+		<li>埼玉県川口市、蕨市のテコンドークラブです</li>
+		<li>未経験者歓迎。初心者から丁寧に指導します！</li>
+		</ul>
 	    </section>
 
 	    <section id="free_lesson" class="col-xs-6 col-sm-4 col-md-3">
 	      <h2 class="section-title">体験練習</h2>
+	      <ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	      </ul>
 	    </section>
 
+	    <!--
 	    <section id="movie" class="col-xs-6 col-sm-4 col-md-3">
 	      <h2 class="section-title">動画</h2>
 	      <div>
@@ -113,6 +119,7 @@
 		<iframe width="420" height="315" src="http://www.youtube.com/embed/HfCz_BymfG8" frameborder="0" allowfullscreen></iframe>
 	      </div>
 	    </section>
+	    -->
 	  </div>
 	</div>
       </article>
@@ -229,6 +236,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="js/index.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=initGC"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.js"></script>
+    <script src="./js/google_calendar.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
