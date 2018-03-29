@@ -6,7 +6,7 @@ body {
 .article-title {
     color: #364e96;
     padding: 0.1em 0;
-    margin: 0.1em;
+    margin: 0.5em 0.1em 0.1em 0.1em;
     border-top: solid 3px #364e96;
     border-bottom: solid 3px #364e96;
     font-size: 2.0rem;
@@ -14,11 +14,15 @@ body {
 
 .section-title {
     padding: 0.25em 0.5em;
-    margin: 0.3em;
+    margin: 1em 0em 0.3em 0em;
     color: #494949;/*文字色*/
     background: transparent;/*背景透明に*/
     border-left: solid 5px #7db4e6;/*左線*/
     font-size: 1.5rem;
+}
+
+.section-caption {
+    margin:1em 0em 1em 1.5em;
 }
 
 .main-text {
@@ -26,12 +30,16 @@ body {
   line-height: 1.5;
 }
 
+ul {
+    list-style-image: url('../img/check-green.png');
+}
+
 @media only screen and (min-width:651px) {
   html {
     font-size: 81.4286%;
   }
 }
- 
+
 @media only screen and (min-width:961px) {
   html {
       font-size: 100%;
